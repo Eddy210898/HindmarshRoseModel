@@ -10,11 +10,16 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     HindmarshRoseParams params;
-    params.ei = 3.281;
-    cout << params.getEi() << "\t" << params.getS() << "\t" << params.getU() << endl;
+    params.a = 1;
+    params.b = 3;
+    params.c = 1;
+    params.d = 5;
+    params.r = 0.001;
+
     float xO = -1.5, yO = 1 - 5 * (pow(xO, 2)), zO = params.getS() * (xO + 1.6);
+    params.xO = xO;
     vector<float>
-        p = HindmarshRoseModel(xO, yO, zO, 0.001, params, 1, 15000);
+        p = HindmarshRoseModel(xO, yO, zO, 0.1, params, 1, 15000, 1);
 
     fstream exampleSimulation;
     exampleSimulation.open("example.txt", ios::out);

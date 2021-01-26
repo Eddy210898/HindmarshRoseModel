@@ -1,14 +1,30 @@
 #include "HindmarshRoseParams.h"
 
-float HindmarshRoseParams::getEi()
+float HindmarshRoseParams::getA()
 {
-    return ei;
+    return a;
 }
-float HindmarshRoseParams::getU()
+float HindmarshRoseParams::getB()
 {
-    return u;
+    return b;
+}
+float HindmarshRoseParams::getC()
+{
+    return c;
+}
+float HindmarshRoseParams::getD()
+{
+    return d;
+}
+float HindmarshRoseParams::getR()
+{
+    return r;
 }
 float HindmarshRoseParams::getS()
 {
-    return S;
+    return s;
+}
+float HindmarshRoseParams::getXo()
+{
+    return xO;
 }

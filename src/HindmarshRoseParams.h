@@ -5,10 +5,14 @@ class HindmarshRoseParams
 {
 
 public:
-    float ei = 3.0, u = 0.0021, S = 4;
-    float getEi();
-    float getU();
+    float a, b, c, d, r, s, xO;
+    float getA();
+    float getB();
+    float getC();
+    float getD();
+    float getR();
     float getS();
+    float getXo();
 };
 
 #endif
